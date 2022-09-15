@@ -1,0 +1,1 @@
+{"uuid":"7928f336-f3b3-4efc-966a-f127354c6e99","name":"TestBasicAuth()","children":["083b05de-996d-4bad-a777-8e528f6f9160"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1663147436879,"stop":1663147438059}],"afters":[],"links":[],"start":1663147436831,"stop":1663147441476}
