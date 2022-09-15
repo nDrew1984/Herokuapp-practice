@@ -8,10 +8,13 @@ public class BasePage {
         this.driver = driver;
     }
 
-    private final String url = "http://the-internet.herokuapp.com/";
-    private final By addRemoveElements = By.xpath("//*[@href=\"/add_remove_elements/\"]");
-    private final By basicAuth = By.xpath("//*[@href=\"/basic_auth\"]");
-    private final By brokenImages = By.xpath("//*[@href=\"/broken_images\"]");
+    protected final String url = "https://the-internet.herokuapp.com/";
+    protected final By addRemoveElements = By.xpath("//*[@href=\"/add_remove_elements/\"]");
+    protected final By basicAuth = By.xpath("//*[@href=\"/basic_auth\"]");
+    protected final By brokenImages = By.xpath("//*[@href=\"/broken_images\"]");
+    protected final By challengingDOM = By.xpath("//*[@href=\"/challenging_dom\"]");
+    protected final By formAuthentication = By.xpath("//*[@href=\"/login\"]");
+    protected final By checkboxes = By.xpath("//*[@href=\"/checkboxes\"]");
 
     public void navigate() {
         driver.get(url);
@@ -24,5 +27,14 @@ public class BasePage {
     }
     public void clickBrokenImages() {
         driver.findElement(brokenImages).click();
+    }
+    public void clickChallengingDOM() {
+        driver.findElement(challengingDOM).click();
+    }
+    public void clickFormAuthentication() {
+        driver.findElement(formAuthentication).click();
+    }
+    public void clickCheckboxes() {
+        driver.findElement(checkboxes).click();
     }
 }

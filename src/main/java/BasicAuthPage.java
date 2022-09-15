@@ -18,7 +18,7 @@ public class BasicAuthPage extends BasePage {
         String popup = "https://" + username + ":" + password + "@" + url;
         driver.get(popup);
     }
-    public String getMessage() {
+    public String getSuccessMessage() {
         return driver.findElement(successMessage).getText();
     }
 }
