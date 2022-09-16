@@ -9,7 +9,7 @@ public class TestBrokenImagesPage extends BaseTest {
         broken.navigate();
         broken.clickBrokenImages();
 
-        String expUrl = "http://the-internet.herokuapp.com/broken_images";
+        String expUrl = "https://the-internet.herokuapp.com/broken_images";
         String actUrl = driver.getCurrentUrl();
         Assertions.assertEquals(expUrl, actUrl);
 

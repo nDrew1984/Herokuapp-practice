@@ -14,7 +14,11 @@ public class TestCheckboxes extends BaseTest {
         Assertions.assertEquals(expUrl, actUrl);
 
         CheckboxPage checkbox = new CheckboxPage(driver);
-        checkbox.clickCheckbox1();
-        checkbox.clickCheckbox2();
+        checkbox.clickAllUnchecked();
+        Assertions.assertTrue(checkbox.isAllSelected());
+
+        checkbox.clickAllChecked();
+        Assertions.assertFalse(checkbox.isAllSelected());
+
     }
 }

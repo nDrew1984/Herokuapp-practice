@@ -1,0 +1,1 @@
+{"uuid":"8937b3bd-8917-431d-bb7b-42fc2d3c4d07","name":"TestCheckbox()","children":["4c0b15ba-f4e3-4483-b442-fdd056e87b38"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1663312645828,"stop":1663312648421}],"afters":[],"links":[],"start":1663312645774,"stop":1663312650572}

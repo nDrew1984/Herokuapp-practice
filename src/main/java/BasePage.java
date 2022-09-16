@@ -15,6 +15,8 @@ public class BasePage {
     protected final By challengingDOM = By.xpath("//*[@href=\"/challenging_dom\"]");
     protected final By formAuthentication = By.xpath("//*[@href=\"/login\"]");
     protected final By checkboxes = By.xpath("//*[@href=\"/checkboxes\"]");
+    protected final By dropdown = By.xpath("//*[@href=\"/dropdown\"]");
+    protected final By floatingMenu = By.xpath("//*[@href=\"/floating_menu\"]");
 
     public void navigate() {
         driver.get(url);
@@ -36,5 +38,11 @@ public class BasePage {
     }
     public void clickCheckboxes() {
         driver.findElement(checkboxes).click();
+    }
+    public void clickDropdown() {
+        driver.findElement(dropdown).click();
+    }
+    public void clickFloatingMenu() {
+        driver.findElement(floatingMenu).click();
     }
 }

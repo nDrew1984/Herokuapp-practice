@@ -9,7 +9,7 @@ public class TestAddRemovePage extends BaseTest {
         basePage.navigate();
         basePage.clickAddRemoveElements();
 
-        String exp1 = "http://the-internet.herokuapp.com/add_remove_elements/";
+        String exp1 = "https://the-internet.herokuapp.com/add_remove_elements/";
         String act1 = driver.getCurrentUrl();
         Assertions.assertEquals(exp1, act1);
 

@@ -9,7 +9,7 @@ public class TestBasicAuthPage extends BaseTest {
         base.navigate();
         base.clickBasicAuth();
 
-        String expUrl = "http://the-internet.herokuapp.com/basic_auth";
+        String expUrl = "https://the-internet.herokuapp.com/basic_auth";
         String actUrl = driver.getCurrentUrl();
         Assertions.assertEquals(expUrl, actUrl);
 
