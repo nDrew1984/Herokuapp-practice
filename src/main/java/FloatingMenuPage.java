@@ -30,13 +30,12 @@ public class FloatingMenuPage extends BasePage {
     public void clickAbout() {
         driver.findElement(about).click();
     }
-    public void clickAllMenu() {
+    public Map<String, String> clickAllMenu() {
         List<WebElement> menuList = driver.findElements(menuRow);
         Map<String, String> namesLinks = new HashMap<>();
         for (WebElement menu : menuList) {
             menu.click();
             namesLinks.put(menu.getText(), driver.getCurrentUrl());
-            // System.out.println(namesLinks);
-        }
+        } return namesLinks;
     }
 }

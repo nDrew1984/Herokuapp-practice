@@ -17,6 +17,10 @@ public class BasePage {
     protected final By checkboxes = By.xpath("//*[@href=\"/checkboxes\"]");
     protected final By dropdown = By.xpath("//*[@href=\"/dropdown\"]");
     protected final By floatingMenu = By.xpath("//*[@href=\"/floating_menu\"]");
+    protected final By keyPresses = By.xpath("//*[@href=\"/key_presses\"]");
+    protected final By hovers = By.xpath("//*[@href=\"/hovers\"]");
+    protected final By dragAndDrop = By.xpath("//*[@href=\"/drag_and_drop\"]");
+    protected final By javascriptAlerts = By.xpath("//*[@href=\"/javascript_alerts\"]");
 
     public void navigate() {
         driver.get(url);
@@ -44,5 +48,17 @@ public class BasePage {
     }
     public void clickFloatingMenu() {
         driver.findElement(floatingMenu).click();
+    }
+    public void clickKeyPresses() {
+        driver.findElement(keyPresses).click();
+    }
+    public void clickHovers() {
+        driver.findElement(hovers).click();
+    }
+    public void clickDragAndDrop() {
+        driver.findElement(dragAndDrop).click();
+    }
+    public void clickJavascriptAlerts() {
+        driver.findElement(javascriptAlerts).click();
     }
 }

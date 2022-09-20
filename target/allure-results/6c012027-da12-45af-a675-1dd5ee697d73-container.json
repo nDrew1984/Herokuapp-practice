@@ -1,0 +1,1 @@
+{"uuid":"6c012027-da12-45af-a675-1dd5ee697d73","name":"TestJsConfirmCancel()","children":["25b28f59-703d-4e50-b42e-9424d518c088"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1663597224132,"stop":1663597225328}],"afters":[],"links":[],"start":1663597224085,"stop":1663597227283}

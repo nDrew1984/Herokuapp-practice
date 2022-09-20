@@ -17,15 +17,17 @@ public class TestFloatingMenu extends BaseTest {
         Assertions.assertEquals(expUrl, actUrl);
 
         FloatingMenuPage floating = new FloatingMenuPage(driver);
-        floating.clickAllMenu();
 
+        // expected- and actual result:
+        // We click to all menu buttons, and check that they lead to correct links:
         Map<String, String> exp = new HashMap<>();
         exp.put("Home", "https://the-internet.herokuapp.com/floating_menu#home");
         exp.put("News", "https://the-internet.herokuapp.com/floating_menu#news");
         exp.put("Contact", "https://the-internet.herokuapp.com/floating_menu#contact");
         exp.put("About", "https://the-internet.herokuapp.com/floating_menu#about");
+        Map<String, String> act = floating.clickAllMenu();
 
-        System.out.println(exp);
+        Assertions.assertEquals(exp, act);
 
 
     }
