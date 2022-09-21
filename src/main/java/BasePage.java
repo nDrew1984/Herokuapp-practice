@@ -21,6 +21,12 @@ public class BasePage {
     protected final By hovers = By.xpath("//*[@href=\"/hovers\"]");
     protected final By dragAndDrop = By.xpath("//*[@href=\"/drag_and_drop\"]");
     protected final By javascriptAlerts = By.xpath("//*[@href=\"/javascript_alerts\"]");
+    protected final By multipleWindows = By.xpath("//*[@href=\"/windows\"]");
+    protected final By contextMenu = By.xpath("//*[@href=\"/context_menu\"]");
+    protected final By dynamicLoading = By.xpath("//*[@href=\"/dynamic_loading\"]");
+    protected final By dynamicControls = By.xpath("//*[@href=\"/dynamic_controls\"]");
+    protected final By entryAd = By.xpath("//*[@href=\"/entry_ad\"]");
+    protected final By exitIntent = By.xpath("//*[@href=\"/exit_intent\"]");
 
     public void navigate() {
         driver.get(url);
@@ -61,4 +67,23 @@ public class BasePage {
     public void clickJavascriptAlerts() {
         driver.findElement(javascriptAlerts).click();
     }
+    public void clickMultipleWindows() {
+        driver.findElement(multipleWindows).click();
+    }
+    public void clickContextMenu() {
+        driver.findElement(contextMenu).click();
+    }
+    public void clickDynamicLoading() {
+        driver.findElement(dynamicLoading).click();
+    }
+    public void clickDynamicControls() {
+        driver.findElement(dynamicControls).click();
+    }
+    public void clickEntryAd() {
+        driver.findElement(entryAd).click();
+    }
+    public void clickExitIntent() {
+        driver.findElement(exitIntent).click();
+    }
+
 }

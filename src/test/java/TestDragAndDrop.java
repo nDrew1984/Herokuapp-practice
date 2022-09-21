@@ -15,5 +15,12 @@ public class TestDragAndDrop extends BaseTest {
 
         DragAndDropPage drag = new DragAndDropPage(driver);
         drag.dragDrop();
+
+        String left = drag.getLeftBoxText();
+        String right = drag.getRightBoxText();
+        String[] exp = {"B", "A"};
+        String[] act = {left, right};
+
+        Assertions.assertArrayEquals(exp, act);
     }
 }

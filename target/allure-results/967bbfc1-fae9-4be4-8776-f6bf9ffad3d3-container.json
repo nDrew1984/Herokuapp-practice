@@ -1,0 +1,1 @@
+{"uuid":"967bbfc1-fae9-4be4-8776-f6bf9ffad3d3","name":"TestIntent()","children":["0bb43c9a-96dc-48bf-8499-25d772b40698"],"befores":[{"name":"setup","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1663771723060,"stop":1663771724254}],"afters":[],"links":[],"start":1663771723012,"stop":1663771726546}
