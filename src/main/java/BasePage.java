@@ -27,6 +27,10 @@ public class BasePage {
     protected final By dynamicControls = By.xpath("//*[@href=\"/dynamic_controls\"]");
     protected final By entryAd = By.xpath("//*[@href=\"/entry_ad\"]");
     protected final By exitIntent = By.xpath("//*[@href=\"/exit_intent\"]");
+    protected final By frames = By.xpath("//*[@href=\"/frames\"]");
+    protected final By WYSIWYGEditor = By.xpath("//*[@href=\"/tinymce\"]");
+    protected final By nestedFrames = By.xpath("//*[@href=\"/nested_frames\"]");
+    protected final By typos = By.xpath("//*[@href=\"/typos\"]");
 
     public void navigate() {
         driver.get(url);
@@ -85,5 +89,18 @@ public class BasePage {
     public void clickExitIntent() {
         driver.findElement(exitIntent).click();
     }
+    public void clickFrames() {
+        driver.findElement(frames).click();
+    }
+    public void clickWYSIWYGEditor() {
+        driver.findElement(WYSIWYGEditor).click();
+    }
+    public void clickNestedFrame() {
+        driver.findElement(nestedFrames).click();
+    }
+    public void clickTypos() {
+        driver.findElement(typos).click();
+    }
+
 
 }

@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.awt.*;
+
 public class TestExitIntent extends BaseTest {
 
     @Test
@@ -15,13 +17,22 @@ public class TestExitIntent extends BaseTest {
     }
 
     @Test
-    public void TestIntent() {
+    public void TestIntent() throws AWTException, InterruptedException {
         TestPageLoad();
         ExitIntentPage exitIntent = new ExitIntentPage(driver);
 
-        // try this: https://www.guru99.com/using-robot-api-selenium.html
-        int x = 250;
-        int y = 0;
-        exitIntent.moveCursor(x, y);
+        int x1 = 250;
+        int y1 = 250;
+        exitIntent.moveCursor(x1, y1);
+
+        Thread.sleep(2000);
+        int x2 = 250;
+        int y2 = 50;
+        exitIntent.moveCursor(x2, y2);
+
+        boolean act = exitIntent.isWindowAppear();
+        Assertions.assertTrue(act);
+
+        exitIntent.clickCloseModal();
     }
 }

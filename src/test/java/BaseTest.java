@@ -24,7 +24,7 @@ public class BaseTest {
         options.addArguments("--window-size=1920,1080");
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
     /******
